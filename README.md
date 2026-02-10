@@ -8,6 +8,10 @@ helm upgrade --install --namespace actions-runner-system --create-namespace \
 --wait actions-runner-controller actions-runner-controller/actions-runner-controller
 ```
 
+# Update the token
+
+[Generate a token](https://github.com/settings/tokens) and replace it in the `values.yaml`. You might have to change the regcred secret in the `actions-runner-system` namesapce also.
+
 # Add a runner for a new repo
 
 ```yaml
